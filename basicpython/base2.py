@@ -4,17 +4,16 @@ import sys
 import os
 from numpy import * 
 import matplotlib.pyplot as plt
-# 配置utf-8输出环境
-reload(sys)
-sys.setdefaultencoding('utf-8')
+
 
 base = mat([[3,1],[1,3]])
 v1 = mat([1,2])
-print linalg.norm(v1)
-print (base[0]*base[1].T)/(linalg.norm(base[1])*linalg.norm(base[0]))
+print (linalg.norm(v1))
+print (base[0]*base[1].T)
+print(linalg.norm(base[1])*linalg.norm(base[0]))
 v2 = v1*base
-print v2
-print linalg.norm(v2)
+print (v2)
+print (linalg.norm(v2))
 
 # 绘图
 fig = plt.figure()
