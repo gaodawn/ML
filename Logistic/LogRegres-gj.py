@@ -30,7 +30,9 @@ def loadDataSet():
 		lineArr = line.strip().split()									#去回车，放入列表
 		dataMat.append([1.0, float(lineArr[0]), float(lineArr[1])])		#添加数据
 		labelMat.append(int(lineArr[2]))								#添加标签
-	fr.close()															#关闭文件
+	fr.close()		
+	print(dataMat)
+	print(labelMat)													#关闭文件
 	return dataMat, labelMat											#返回
 
 """
@@ -179,7 +181,8 @@ Modify:
 """
 def plotWeights(weights_array1,weights_array2):
 	#设置汉字格式
-	font = FontProperties(fname=r"c:\windows\fonts\simsun.ttc", size=14)
+	#font = FontProperties(fname=r"c:\windows\fonts\simsun.ttc", size=14)
+	font = FontProperties(fname=r"/System/Library/Fonts/STHeiti Light.ttc", size=14)		#设置中文字体
 	#将fig画布分隔成1行1列,不共享x轴和y轴,fig画布的大小为(13,8)
 	#当nrow=3,nclos=2时,代表fig画布被分为六个区域,axs[0][0]表示第一行第一列
 	fig, axs = plt.subplots(nrows=3, ncols=2,sharex=False, sharey=False, figsize=(20,10))

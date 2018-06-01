@@ -57,7 +57,9 @@ def loadDataSet():
 		lineArr = line.strip().split()									#去回车，放入列表
 		dataMat.append([1.0, float(lineArr[0]), float(lineArr[1])])		#添加数据
 		labelMat.append(int(lineArr[2]))								#添加标签
-	fr.close()															#关闭文件
+	fr.close()		
+	print(dataMat)
+	print(labelMat)													#关闭文件
 	return dataMat, labelMat											#返回
 
 """

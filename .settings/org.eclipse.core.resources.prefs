@@ -1,7 +1,12 @@
 eclipse.preferences.version=1
+encoding//Regression/abalone.py=utf-8
+encoding//Regression/lego.py=utf-8
+encoding//Regression/regression.py=utf-8
+encoding//Regression/regression_old.py=utf-8
 encoding//basicpython/base1.py=utf-8
 encoding//basicpython/base2.py=utf-8
 encoding//basicpython/ch1.py=utf-8
+encoding//basicpython/distance.py=utf-8
 encoding//basicpython/eig_test01.py=utf-8
 encoding//basicpython/loadbigdata.py=utf-8
 encoding//basicpython/matrix1.py=utf-8
