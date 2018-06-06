@@ -37,10 +37,7 @@ def plotDataSet():
         无
     Returns:
         无
-    Website:
-        http://www.cuijiahua.com/
-    Modify:
-        2017-11-12
+
     """
     xArr, yArr = loadDataSet('ex0.txt')                                    #加载数据集
     n = len(xArr)                                                        #数据个数
