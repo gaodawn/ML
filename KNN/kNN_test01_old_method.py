@@ -39,7 +39,7 @@ def classify0(inX, dataSet, labels, k):
 	dataSetSize = dataSet.shape[0]
 	print("datasetSize:")
 	print(dataSetSize)
-	print("datase:")
+	print("dataset:")
 	print(dataSet)
 	#在列向量方向上重复inX共1次(横向)，行向量方向上重复inX共dataSetSize次(纵向)
 	diffMat = np.tile(inX, (dataSetSize, 1)) - dataSet
@@ -82,6 +82,6 @@ if __name__ == '__main__':
 	#测试集
 	test = [101,20]
 	#kNN分类
-	test_class = classify0(test, group, labels, 3)
+	test_class = classify0(test, group, labels, 4)
 	#打印分类结果
 	print(test_class)
