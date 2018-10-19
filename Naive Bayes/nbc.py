@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 import os
 import random
 import jieba
+import sys
 
 """
 函数说明:中文文本处理
@@ -174,6 +175,7 @@ def TextClassifier(train_feature_list, test_feature_list, train_class_list, test
 if __name__ == '__main__':
 	#文本预处理
 	folder_path = './SogouC/Sample'				#训练集存放地址
+	print(sys.path)
 	all_words_list, train_data_list, test_data_list, train_class_list, test_class_list = TextProcessing(folder_path, test_size=0.2)
 
 	# 生成stopwords_set
