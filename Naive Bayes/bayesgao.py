@@ -1,7 +1,7 @@
 '''
 Created on Oct 19, 2010
 
-@author: Peter  edit by gaodawn
+@author: Peter  edit by gaodawn 2018-10-22
 '''
 from numpy import *
 #生成数据集
