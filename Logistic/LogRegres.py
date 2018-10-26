@@ -186,6 +186,7 @@ def plotBestFit(weights):
 
 if __name__ == '__main__':
 	dataMat, labelMat = loadDataSet()	
-	plotDataSet()
-	#weights = gradAscent(dataMat, labelMat)
-	#plotBestFit(weights)
+	#plotDataSet()
+	weights = gradAscent(dataMat, labelMat)
+	print(weights)
+	plotBestFit(weights)

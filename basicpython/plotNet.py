@@ -6,9 +6,7 @@ import numpy as np
 from numpy import *
 import matplotlib.pyplot as plt 
 
-# 配置utf-8输出环境
-reload(sys)
-sys.setdefaultencoding('utf-8')
+
 
 # nodelist = ["city1","city2","city3","city4","city5","city6","city7","city8"]
 dist = mat([[0.1,0.1],[0.9,0.5],[0.9,0.1],[0.45,0.9],[0.9,0.8],[0.7,0.9],[0.1,0.45],[0.45,0.1]])
